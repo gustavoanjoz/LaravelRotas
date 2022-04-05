@@ -14,9 +14,5 @@ use App\Http\Controllers\UsuarioController;
 |
 */
 
-Route::get('/', function () {
- return 'Minha primeira rota';
-}); 
-Route::get('contato',function(){
-   return 'Minha segunda rota';
-});
+Route::get('/',[UsuarioController::class, 'cadastrar']);
+
